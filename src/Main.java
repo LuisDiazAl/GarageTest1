@@ -23,7 +23,7 @@ public class Main {
         System.out.println(String.format("Esta full¿?: %b \nCapacidad Actual: %s", garage1.estaFull(), garage1.getListaDeVehiculo().size()));
 
         //Falta mostrar la Operacion del coste de las ruedas
-        //Descartar cualquier pedido extra cuando se excede su capacidad
+
 
 
     }

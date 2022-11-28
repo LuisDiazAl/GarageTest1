@@ -5,7 +5,6 @@ public class Vehiculo {
     private String marca;
     private double km;
     private int cantDeRuedas;
-
     private String modelo;
 
     //Setters y Getters de marca
