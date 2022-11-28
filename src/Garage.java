@@ -69,6 +69,19 @@ public class Garage {
         this.listaDeVehiculo.add(vehiculo);
 
     }
+
+    //Calcular el promedio de Km
+    void promedioKm() {
+        for (getListaDeVehiculo().get(i); i < listaDeVehiculo; i++) {
+          
+        }
+
+        //Calcular el precio del cambio de rueda
+    }
+
+
+
+
 }
 
 

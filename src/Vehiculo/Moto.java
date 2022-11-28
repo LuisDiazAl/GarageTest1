@@ -12,7 +12,7 @@ public class Moto extends Vehiculo {
         this.cilindraje = cilindraje;
     }
 
-    //Metodo construttor de Moto
+    //Metodo constructor de Moto
     public Moto(String marca, double km, int cantDeRuedas, int cilindraje){
         this.setCilindraje(cilindraje);
         this.setMarca(marca);

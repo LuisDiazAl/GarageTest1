@@ -1,6 +1,7 @@
 package Vehiculo;
 
 public class Vehiculo {
+
     //Atributos de la clase Vehiculo
     private String marca;
     private double km;
@@ -29,7 +30,6 @@ public class Vehiculo {
     public int getCantDeRuedas() {
         return cantDeRuedas;
     }
-
     public void setCantDeRuedas(int cantDeRuedas) {
         this.cantDeRuedas = cantDeRuedas;
     }
