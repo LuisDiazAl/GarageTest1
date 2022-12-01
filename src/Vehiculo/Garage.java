@@ -1,3 +1,5 @@
+package Vehiculo;
+
 import Vehiculo.Vehiculo;
 
 import java.util.ArrayList;
@@ -6,10 +8,7 @@ public class Garage {
     private double precio;
     private int capMaxima;
     private ArrayList<Vehiculo> listaDeVehiculo;
-    private Vehiculo transporte;
-    private double precioCambioRueda;
-
-    private Vehiculo estaFull;
+    private Boolean estaFull;
 
 
     //Setters y Getters de Arraylist
@@ -47,17 +46,10 @@ public class Garage {
 
 
     //Metodo constructor de garage
-    Garage(double precio,int capMaxima){
+    public Garage(double precio, int capMaxima){
        this.setPrecio(precio);
        this.setCapMaxima(capMaxima);
        this.listaDeVehiculo = new ArrayList<Vehiculo>();
-    }
-
-
-    public double cambioRueda(){
-        double ruedasTotal = this.transporte.getCantDeRuedas();
-        double precioTotal;
-        return precioTotal= ruedasTotal*precioCambioRueda;
     }
 
     //Boolean y if para verificar que cuando ocupe capMaxima no se ingresen más vehiculos
@@ -70,18 +62,38 @@ public class Garage {
 
     }
 
-    //Calcular el promedio de Km
-    void promedioKm() {
-        for (getListaDeVehiculo().get(i); i < listaDeVehiculo; i++) {
-          
-        }
+        //Calcular el promedio de Km
+    public double promedioKm() {
+        double sumaKm=0 ;
+        for (int i=0; i<this.listaDeVehiculo.size(); i++) {
+            sumaKm=sumaKm + this.listaDeVehiculo.get(i).getKm();
 
-        //Calcular el precio del cambio de rueda
+        }
+        return sumaKm/ listaDeVehiculo.size();
     }
 
+        //Calcular el precio del cambio de rueda
+
+        public double precioTotalRuedas() {
+
+             double sumaTotalRuedas = 0;
+
+            for (int i = 0; i < listaDeVehiculo.size(); i++) {
+                sumaTotalRuedas= sumaTotalRuedas + this.listaDeVehiculo.get(i).getCantDeRuedas();
+            }
+             return sumaTotalRuedas * precio;
+
+        }
 
 
+        public Boolean getEstaFull() {
+            return estaFull;
+    }
 
-}
+        public void setEstaFull(Boolean estaFull) {
+
+                    this.estaFull = estaFull;
+                }
+            }
 
 

@@ -1,7 +1,6 @@
 import Vehiculo.Coche;
+import Vehiculo.Garage;
 import Vehiculo.Moto;
-
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,18 +10,18 @@ public class Main {
     Coche coche1 = new Coche("toyota",20000,4,4);
     Coche coche2 = new Coche("renault",50000,4,4);
 
-    Garage garage1 = new Garage(20,3);
+    Garage garage1 = new Garage(10,3);
 
 
     garage1.AgregarVehiculo(moto1);
     garage1.AgregarVehiculo(coche1);
 
-    garage1.AgregarVehiculo(moto2);
     garage1.AgregarVehiculo(coche2);
+    garage1.AgregarVehiculo(moto2);
 
-        System.out.println(String.format("Esta full¿?: %b \nCapacidad Actual: %s", garage1.estaFull(), garage1.getListaDeVehiculo().size()));
+        System.out.println(String.format("Esta full¿?: %b \nCapacidad Actual: %s\nPromedio de Km: %f\nPrecio Total de Ruedas: %f", garage1.estaFull(), garage1.getListaDeVehiculo().size(),garage1.promedioKm(),garage1.precioTotalRuedas()));
 
-        //Falta mostrar la Operacion del coste de las ruedas
+
 
 
 
