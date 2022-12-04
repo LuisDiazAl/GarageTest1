@@ -44,10 +44,19 @@ public class Partido {
 
                //Metodo constructor de Partido
 
-    public Partido (Date fecha,Equipo local,Equipo visitante) {
+    public Partido(Date fecha, Equipo local, Equipo visitante) {
         this.setFecha(fecha);
         this.setLocal(local);
         this.setVisitante(visitante);
+
+    }
+
+    public void hacerGoles(int golesLocal,int golesVisitante){
+      this.getResultado().setGolesLocal(golesLocal);
+      this.getResultado().setGolesVisitante(golesVisitante);
+    }
+
+    Partido(){
 
     }
 

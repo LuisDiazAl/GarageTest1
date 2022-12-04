@@ -1,6 +1,8 @@
-import Vehiculo.Coche;
-import Vehiculo.Garage;
-import Vehiculo.Moto;
+import Mundial.*;
+import Vehiculo.*;
+import com.sun.xml.internal.ws.wsdl.writer.document.Part;
+
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +23,16 @@ public class Main {
 
     System.out.println(String.format("Esta full¿?: %b \nCapacidad Actual: %s\nPromedio de Km: %f\nPrecio Total de Ruedas: %f", garage1.estaFull(), garage1.getListaDeVehiculo().size(),garage1.promedioKm(),garage1.precioTotalRuedas()));
 
+        System.out.println("----MUNDIAL-----");
 
+        Equipo equipo1 = new Equipo("Palermo");
+        Equipo equipo2 = new Equipo("Recoleta");
+
+        Partido partido1 = new Partido(new Date(22,05,10),equipo1,equipo2);
+
+        partido1.hacerGoles(1,2);
+
+        System.out.println(String.format("Partido 1: %d",partido1.getResultado()));
 
 
 

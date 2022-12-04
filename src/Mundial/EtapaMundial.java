@@ -4,13 +4,15 @@ import java.util.ArrayList;
 
 public class EtapaMundial {
     private String descripcionEtapa;
-    private ArrayList<Partido> partidos;
+    private ArrayList<Partido> listaDepartidos;
 
+    private ArrayList<Equipo> equiposQueAvanzan;
 
         //Metodo Constructor EtapaMundial
-    
+
       EtapaMundial(){
-        this.partidos = new ArrayList<Partido>();
+        this.listaDepartidos = new ArrayList<Partido>();
+        this.equiposQueAvanzan = new ArrayList<Equipo>();
     }
 
 
@@ -24,13 +26,16 @@ public class EtapaMundial {
     }
 
       //Arraylist de Partido
-    public ArrayList<Partido> getPartidos() {
-        return partidos;
+    public ArrayList<Partido> getListaDepartidos() {
+        return listaDepartidos;
     }
 
 
+    public ArrayList<Equipo> getEquiposQueAvanzan() {
+        return equiposQueAvanzan;
+    }
 
-
-    //Falta getEquiposQueAvanzan(): List<Equipo>
-
+    public void setEquiposQueAvanzan(ArrayList<Equipo> equiposQueAvanzan) {
+        this.equiposQueAvanzan = equiposQueAvanzan;
+    }
 }
