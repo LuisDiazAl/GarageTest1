@@ -24,14 +24,8 @@ public class Resultado {
 
              //Boolean de quien gano
     public boolean ganoLocal() {
+         return golesLocal>golesVisitante;
 
-        if (golesLocal > golesVisitante) return ganoLocal();
-        else if (golesVisitante > golesLocal) {
-            return false;
-        } else if (golesLocal == golesVisitante) {
-           //Saber como mostrar el empate
-        }
-           return false;
     }
 
 }
