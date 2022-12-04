@@ -15,6 +15,6 @@ public class Equipo {
         this.nombre = nombre;
     }
 
-    //Saber en que usar el arraylist de partidosJugados
+
 
 }

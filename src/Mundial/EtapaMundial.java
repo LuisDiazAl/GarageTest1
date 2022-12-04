@@ -6,9 +6,11 @@ public class EtapaMundial {
     private String descripcionEtapa;
     private ArrayList<Partido> partidos;
 
-        //Metodo EtapaMundial
-   public EtapaMundial(){
-        //Saber que agregarle a este metodo
+
+        //Metodo Constructor EtapaMundial
+    
+      EtapaMundial(){
+        this.partidos = new ArrayList<Partido>();
     }
 
 
@@ -25,6 +27,9 @@ public class EtapaMundial {
     public ArrayList<Partido> getPartidos() {
         return partidos;
     }
+
+
+
 
     //Falta getEquiposQueAvanzan(): List<Equipo>
 
