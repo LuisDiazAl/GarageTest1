@@ -6,7 +6,7 @@ public class EtapaMundial {
     private String descripcionEtapa;
     private ArrayList<Partido> listaDepartidos;
 
-    private ArrayList<Equipo> equiposQueAvanzan;
+    public ArrayList<Equipo> equiposQueAvanzan;
 
         //Metodo Constructor EtapaMundial
 
