@@ -21,7 +21,7 @@ public class Grupo extends EtapaMundial{
         for (int i = 0; i < getListaDepartidos().size(); i++) {
             if( getListaDepartidos().get(i).getResultado().ganoLocal() ){
                 getListaDepartidos().get(i).getLocal().sumarPuntaje();
-            } else getListaDepartidos().get(i).getVisitante().sumarPuntaje;
+            } else getListaDepartidos().get(i).getVisitante().sumarPuntaje();
 
             if (getListaDepartidos().get(i).getLocal().getPuntos()>=6){
                 this.equiposQueAvanzan.add(getListaDepartidos().get(i).getLocal());

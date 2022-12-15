@@ -3,7 +3,12 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Llave extends EtapaMundial{
-    @Override
+    public void generarPartidos(ArrayList<Equipo> equipos){
+        for (int i = 0; i < equipos.size(); i+=2) {
+         getListaDepartidos().add(new Partido(new Date(),equipos.get(i), equipos.get(i+1)));
+        }
+
+    }
     public ArrayList<Equipo> getEquiposQueAvanzan() {
         for (int i = 0; i < getListaDepartidos().size(); i++) {
             if (getListaDepartidos().get(i).getResultado().ganoLocal()) {
@@ -14,11 +19,5 @@ public class Llave extends EtapaMundial{
         return equiposQueAvanzan;
     }
 
-    public void generarPartidos(ArrayList<Equipo> equipos){
-        for (int i = 0; i < equipos.size(); i+=2) {
-         getListaDepartidos().add(new Partido(new Date(),equipos.get(i), equipos.get(i+1)));
-        }
-
-    }
 
 }

@@ -77,16 +77,120 @@ public class Main {
 
 
         Grupo grupoA = new Grupo();
-        grupoA.generarPartidos();
+        grupoA.generarPartidos(teamgrupoA);
+        grupoA.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoA.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoA.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoA.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoA.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoA.getListaDepartidos().get(5).hacerGoles(0,1);
 
+        Grupo grupoB = new Grupo();
+        grupoB.generarPartidos(teamgrupoB);
+        grupoB.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoB.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoB.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoB.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoB.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoB.getListaDepartidos().get(5).hacerGoles(0,1);
 
-        Grupo segundoGrupo = new Grupo();
+        Grupo grupoC = new Grupo();
+        grupoC.generarPartidos(teamgrupoC);
+        grupoC.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoC.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoC.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoC.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoC.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoC.getListaDepartidos().get(5).hacerGoles(0,1);
 
+        Grupo grupoD = new Grupo();
+        grupoD.generarPartidos(teamgrupoD);
+        grupoD.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoD.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoD.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoD.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoD.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoD.getListaDepartidos().get(5).hacerGoles(0,1);
 
+        Grupo grupoE = new Grupo();
+        grupoE.generarPartidos(teamgrupoE);
+        grupoE.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoE.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoE.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoE.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoE.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoE.getListaDepartidos().get(5).hacerGoles(0,1);
 
+        Grupo grupoF = new Grupo();
+        grupoF.generarPartidos(teamgrupoF);
+        grupoF.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoF.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoF.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoF.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoF.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoF.getListaDepartidos().get(5).hacerGoles(0,1);
 
+        Grupo grupoG = new Grupo();
+        grupoG.generarPartidos(teamgrupoG);
+        grupoG.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoG.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoG.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoG.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoG.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoG.getListaDepartidos().get(5).hacerGoles(0,1);
 
+        Grupo grupoH = new Grupo();
+        grupoH.generarPartidos(teamgrupoH);
+        grupoH.getListaDepartidos().get(0).hacerGoles(2,1);
+        grupoH.getListaDepartidos().get(1).hacerGoles(0,1);
+        grupoH.getListaDepartidos().get(2).hacerGoles(5,1);
+        grupoH.getListaDepartidos().get(3).hacerGoles(2,1);
+        grupoH.getListaDepartidos().get(4).hacerGoles(3,1);
+        grupoH.getListaDepartidos().get(5).hacerGoles(0,1);
 
+       ArrayList<Equipo> clasificadosOctavos = new ArrayList<Equipo>();
+        clasificadosOctavos.addAll(grupoA.getEquiposQueAvanzan());
+        clasificadosOctavos.addAll(grupoB.getEquiposQueAvanzan());
+        clasificadosOctavos.addAll(grupoC.getEquiposQueAvanzan());
+        clasificadosOctavos.addAll(grupoD.getEquiposQueAvanzan());
+        clasificadosOctavos.addAll(grupoF.getEquiposQueAvanzan());
+        clasificadosOctavos.addAll(grupoG.getEquiposQueAvanzan());
+        clasificadosOctavos.addAll(grupoH.getEquiposQueAvanzan());
+
+        Llave octavos = new Llave();
+        octavos.generarPartidos(clasificadosOctavos);
+        octavos.getListaDepartidos().get(0).hacerGoles(2,1);
+        octavos.getListaDepartidos().get(1).hacerGoles(0,1);
+        octavos.getListaDepartidos().get(2).hacerGoles(5,1);
+        octavos.getListaDepartidos().get(3).hacerGoles(2,1);
+        octavos.getListaDepartidos().get(4).hacerGoles(3,1);
+        octavos.getListaDepartidos().get(5).hacerGoles(0,1);
+
+        ArrayList<Equipo> clasificadosCuartos = octavos.getEquiposQueAvanzan();
+
+        Llave cuartos = new Llave();
+        cuartos.generarPartidos(clasificadosCuartos);
+        cuartos.getListaDepartidos().get(0).hacerGoles(2,1);
+        cuartos.getListaDepartidos().get(1).hacerGoles(0,1);
+        cuartos.getListaDepartidos().get(2).hacerGoles(5,1);
+        cuartos.getListaDepartidos().get(3).hacerGoles(2,1);
+
+        ArrayList<Equipo> clasificadosSemis = cuartos.getEquiposQueAvanzan();
+
+        Llave semis = new Llave();
+        semis.generarPartidos(clasificadosSemis);
+        semis.getListaDepartidos().get(0).hacerGoles(2,1);
+        semis.getListaDepartidos().get(1).hacerGoles(0,1);
+
+        ArrayList<Equipo> finalistas = semis.getEquiposQueAvanzan();
+
+        Llave finalMundial = new Llave();
+        finalMundial.generarPartidos(finalistas);
+        finalMundial.getListaDepartidos().get(0).hacerGoles(2,1);
+
+        ArrayList<Equipo> ganador = finalMundial.getEquiposQueAvanzan();
+
+        System.out.println(String.format("Ganador: %S",ganador.get(0).getNombre()));
 
     }
 }
