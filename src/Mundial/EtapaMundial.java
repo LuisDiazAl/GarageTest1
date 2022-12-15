@@ -10,7 +10,7 @@ public class EtapaMundial {
 
         //Metodo Constructor EtapaMundial
 
-      EtapaMundial(){
+    public  EtapaMundial(){
         this.listaDepartidos = new ArrayList<Partido>();
         this.equiposQueAvanzan = new ArrayList<Equipo>();
     }

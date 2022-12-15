@@ -33,14 +33,51 @@ public class Main {
         teamgrupoA.add(new Equipo("ESP"));
         teamgrupoA.add(new Equipo("USA"));
 
-        ArrayList<Equipo> teamgrupaB = new ArrayList<Equipo>();
-        teamgrupaB.add(new Equipo("PSG"));
-        teamgrupaB.add(new Equipo("BAR"));
-        teamgrupaB.add(new Equipo("MAD"));
-        teamgrupaB.add(new Equipo("ATH"));
+        ArrayList<Equipo> teamgrupoB = new ArrayList<Equipo>();
+        teamgrupoB.add(new Equipo("PSG"));
+        teamgrupoB.add(new Equipo("BAR"));
+        teamgrupoB.add(new Equipo("MAD"));
+        teamgrupoB.add(new Equipo("ATH"));
 
-        Grupo primerGrupo = new Grupo();
-        
+        ArrayList<Equipo> teamgrupoC = new ArrayList<Equipo>();
+        teamgrupoC.add(new Equipo("ASE"));
+        teamgrupoC.add(new Equipo("DFG"));
+        teamgrupoC.add(new Equipo("QWE"));
+        teamgrupoC.add(new Equipo("JKL"));
+
+        ArrayList<Equipo> teamgrupoD = new ArrayList<Equipo>();
+        teamgrupoD.add(new Equipo("CVB"));
+        teamgrupoD.add(new Equipo("YUI"));
+        teamgrupoD.add(new Equipo("rfv"));
+        teamgrupoD.add(new Equipo("pag"));
+
+        ArrayList<Equipo> teamgrupoE = new ArrayList<Equipo>();
+        teamgrupoE.add(new Equipo("BVB"));
+        teamgrupoE.add(new Equipo("JFK"));
+        teamgrupoE.add(new Equipo("LUI"));
+        teamgrupoE.add(new Equipo("EDI"));
+
+        ArrayList<Equipo> teamgrupoF = new ArrayList<Equipo>();
+        teamgrupoF.add(new Equipo("LOLO"));
+        teamgrupoF.add(new Equipo("LARE"));
+        teamgrupoF.add(new Equipo("MAU"));
+        teamgrupoF.add(new Equipo("JJ"));
+
+        ArrayList<Equipo> teamgrupoG = new ArrayList<Equipo>();
+        teamgrupoG.add(new Equipo("BOCA"));
+        teamgrupoG.add(new Equipo("RIVER"));
+        teamgrupoG.add(new Equipo("CAP"));
+        teamgrupoG.add(new Equipo("RACING"));
+
+        ArrayList<Equipo> teamgrupoH = new ArrayList<Equipo>();
+        teamgrupoH.add(new Equipo("DELL"));
+        teamgrupoH.add(new Equipo("AMZ"));
+        teamgrupoH.add(new Equipo("APPLE"));
+        teamgrupoH.add(new Equipo("MELI"));
+
+
+        Grupo grupoA = new Grupo();
+        grupoA.generarPartidos();
 
 
         Grupo segundoGrupo = new Grupo();
