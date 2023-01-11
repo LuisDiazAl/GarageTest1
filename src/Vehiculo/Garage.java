@@ -1,7 +1,5 @@
 package Vehiculo;
 
-import Vehiculo.Vehiculo;
-
 import java.util.ArrayList;
 
 public class Garage {
@@ -56,7 +54,7 @@ public class Garage {
     public boolean estaFull() {
         return this.listaDeVehiculo.size()>=capMaxima;
     }
-    public void AgregarVehiculo(Vehiculo vehiculo){
+    public void agregarVehiculo(Vehiculo vehiculo){
         if (estaFull()) return;
         this.listaDeVehiculo.add(vehiculo);
 

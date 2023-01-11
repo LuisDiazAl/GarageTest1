@@ -1,9 +1,7 @@
 import Mundial.*;
 import Vehiculo.*;
-import com.sun.xml.internal.ws.wsdl.writer.document.Part;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,11 +14,11 @@ public class Main {
     Garage garage1 = new Garage(10,3);
 
 
-    garage1.AgregarVehiculo(moto1);
-    garage1.AgregarVehiculo(coche1);
+    garage1.agregarVehiculo(moto1);
+    garage1.agregarVehiculo(coche1);
 
-    garage1.AgregarVehiculo(coche2);
-    garage1.AgregarVehiculo(moto2);
+    garage1.agregarVehiculo(coche2);
+    garage1.agregarVehiculo(moto2);
 
     System.out.println(String.format("Esta full¿?: %b \nCapacidad Actual: %s\nPromedio de Km: %f\nPrecio Total de Ruedas: %f", garage1.estaFull(), garage1.getListaDeVehiculo().size(),garage1.promedioKm(),garage1.precioTotalRuedas()));
 
@@ -75,6 +73,11 @@ public class Main {
         teamgrupoH.add(new Equipo("APPLE"));
         teamgrupoH.add(new Equipo("MELI"));
 
+        //Objetivo principal: Crear partidos de forma aleatoria con goles aleatorios.
+
+        //Objetivo secundario: Optimizar lineas de codigo num 78 - 84, con random, pero hace falta crear una condicion que me seleccione unicamente dos partidos que avancen, en caso de que existan 3, solo seleccione 2.
+
+        // Objetivo 3: uso de random funcionable para crear partidos de forma aleatoria, random funcione en hacer gol, por ahora solo recibe int.
 
         Grupo grupoA = new Grupo();
         grupoA.generarPartidos(teamgrupoA);
@@ -93,6 +96,7 @@ public class Main {
         grupoB.getListaDepartidos().get(3).hacerGoles(2,1);
         grupoB.getListaDepartidos().get(4).hacerGoles(3,1);
         grupoB.getListaDepartidos().get(5).hacerGoles(0,1);
+
 
         Grupo grupoC = new Grupo();
         grupoC.generarPartidos(teamgrupoC);

@@ -48,12 +48,12 @@ public class Partido {
         this.setFecha(fecha);
         this.setLocal(local);
         this.setVisitante(visitante);
-
+        this.setResultado(new Resultado());
     }
 
     public void hacerGoles(int golesLocal,int golesVisitante){
-      this.getResultado().setGolesLocal(golesLocal);
-      this.getResultado().setGolesVisitante(golesVisitante);
+      getResultado().setGolesLocal(golesLocal);
+      getResultado().setGolesVisitante(golesVisitante);
     }
 
     Partido(){
